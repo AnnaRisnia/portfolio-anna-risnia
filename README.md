@@ -8,7 +8,7 @@ Site de portfólio pessoal desenvolvido do zero com HTML, CSS e JavaScript puro,
 
 ## 🖥️ Visão Geral
 
-Site responsivo com design elegante em tons terrosos, apresentando minha trajetória, habilidades e projetos na área de Tecnologia e Segurança Cibernética.
+Site responsivo com design elegante em tons terrosos, apresentando minha trajetória, habilidades e projetos na área de Tecnologia.
 
 ---
 
