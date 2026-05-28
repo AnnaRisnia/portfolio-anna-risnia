@@ -108,6 +108,7 @@ h3,
     url("foto-hero.jpg");
   background-size: cover;
   background-position: left top;
+  overflow: hidden;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -362,9 +363,54 @@ footer {
   color: var(--muted);
 }
 
+/* Hamburguer */
+.hamburguer {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+}
+
+.hamburguer span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: var(--text);
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
 @media (max-width: 1000px) {
+  .hamburguer {
+    display: flex;
+  }
+
   .menu {
     display: none;
+    position: fixed;
+    top: 86px;
+    left: 0;
+    width: 100%;
+    background: #32110b;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    padding: 16px 0;
+    z-index: 9;
+  }
+
+  .menu.menu-aberto {
+    display: flex;
+  }
+
+  .menu a {
+    padding: 14px 0;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
   }
 
   .about-grid {
@@ -420,8 +466,14 @@ footer {
     grid-template-columns: 1fr;
   }
 
+  /* Habilidades: 2 colunas centralizadas, último item centralizado */
   .skills-grid {
     grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
+
+  .skills-grid span:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
   }
 
   .section-title {
