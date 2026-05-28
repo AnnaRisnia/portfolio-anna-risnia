@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anna Rísnia | Portfólio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <a class="logo" href="#inicio">🍂 AR</a>
+      <nav class="menu" id="menu">
+        <a href="#inicio" onclick="fecharMenu()">Início</a>
+        <a href="#sobre" onclick="fecharMenu()">Sobre</a>
+        <a href="#projetos" onclick="fecharMenu()">Projetos</a>
+        <a href="#habilidades" onclick="fecharMenu()">Habilidades</a>
+        <a href="#contato" onclick="fecharMenu()">Contato</a>
+      </nav>
+      <a class="btn btn-outline" href="cv-anna-risnia.pdf" download
+        >Baixar CV</a
+      >
+      <button
+        class="hamburguer"
+        id="hamburguer"
+        onclick="toggleMenu()"
+        aria-label="Abrir menu"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </header>
+
+    <main>
+      <section id="inicio" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <span class="decor">🍂</span>
+          <h1>Anna Rísnia</h1>
+          <h2>Tecnologia & Segurança Cibernética</h2>
+          <p>
+            Engenheira Civil em transição de carreira para tecnologia, com foco
+            em Segurança Cibernética. Construindo base sólida em programação,
+            dados e automação para proteger sistemas e apoiar decisões
+            estratégicas.
+          </p>
+          <div class="hero-buttons">
+            <a class="btn btn-primary" href="#projetos">Ver Projetos</a>
+            <a class="btn btn-outline" href="#contato">Entrar em Contato</a>
+          </div>
+          <div class="social">
+            <a
+              href="https://github.com/AnnaRisnia"
+              target="_blank"
+              rel="noopener"
+              >GitHub</a
+            >
+            <a
+              href="https://www.linkedin.com/in/anna-risnia-pcd-5a4460169/"
+              target="_blank"
+              rel="noopener"
+              >LinkedIn</a
+            >
+            <a href="mailto:ar.costta@outlook.com">E-mail</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="sobre" class="about section-dark">
+        <div class="container about-grid">
+          <div class="profile-card">
+            <img
+              src="foto-perfil.jpg"
+              alt="Anna Rísnia"
+              class="profile-placeholder"
+            />
+          </div>
+
+          <div>
+            <span class="decor">🍂</span>
+            <h2>Sobre mim</h2>
+            <p>
+              Engenheira Civil, especialista em Gestão de Processos e Qualidade,
+              em transição de carreira para Tecnologia com foco em Segurança
+              Cibernética. Trago da engenharia o raciocínio analítico, atenção a
+              detalhes e visão de processos — competências essenciais para atuar
+              na área de cyber. Estudo fundamentos de redes, sistemas
+              operacionais e segurança da informação, enquanto desenvolvo
+              habilidades em programação e automação.
+            </p>
+            <a class="btn btn-outline" href="#contato">Vamos conversar?</a>
+          </div>
+
+          <div class="info-list">
+            <div>
+              <strong>🎓 Formação</strong>
+              <p>Gestão da Automação Industrial</p>
+              <p>Gestão de Processos e Qualidade</p>
+              <p>Engenharia Civil</p>
+            </div>
+            <div>
+              <strong>🛡️ Foco atual</strong>
+              <p>Segurança Cibernética</p>
+              <p>Programação</p>
+              <p>Redes e Sistemas</p>
+              <p>Automação</p>
+            </div>
+            <div>
+              <strong>🎯 Objetivo</strong>
+              <p>
+                Atuar em Segurança Cibernética, protegendo sistemas e
+                contribuindo para ambientes digitais mais seguros.
+              </p>
+            </div>
+            <div>
+              <strong>📍 Localização</strong>
+              <p>Salvador - BA</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="habilidades" class="skills section-dark">
+        <div class="container">
+          <span class="decor">🍂</span>
+          <h2>Habilidades</h2>
+          <div class="skills-grid">
+            <span>🐍 Python</span>
+            <span>🛢 SQL</span>
+            <span>🌐 HTML</span>
+            <span>🎨 CSS</span>
+            <span>⚡ JavaScript</span>
+            <span>🧡 Git &amp; GitHub</span>
+            <span>🖥️ Linux</span>
+            <span>🛡️ Redes</span>
+            <span>📊 Power BI</span>
+            <span>📗 Excel</span>
+            <span>⚙️ Automação</span>
+            <span>🔍 OSINT</span>
+            <span>🤖 Inteligência Artificial</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="projetos" class="projects">
+        <div class="container">
+          <div class="section-title">
+            <div>
+              <span class="decor">🍂</span>
+              <h2>Projetos em destaque</h2>
+            </div>
+            <a
+              href="https://github.com/AnnaRisnia"
+              target="_blank"
+              rel="noopener"
+            >
+              Ver todos os projetos →
+            </a>
+          </div>
+
+          <div class="projects-grid">
+            <article class="project-card">
+              <div class="project-image">🛡️</div>
+              <h3>Verificador de Vazamento</h3>
+              <p>
+                Script Python que consulta a API Have I Been Pwned para
+                verificar se um e-mail foi exposto em brechas de dados, gerando
+                relatório com recomendações de segurança.
+              </p>
+              <a
+                class="btn btn-small"
+                href="https://github.com/AnnaRisnia/verificador-vazamento-email"
+                target="_blank"
+                rel="noopener"
+                >Ver projeto</a
+              >
+            </article>
+
+            <article class="project-card">
+              <div class="project-image">🐍</div>
+              <h3>Automação de Relatório de Vendas</h3>
+              <p>
+                Automação em Python que acessa o Google Drive, lê arquivo de
+                vendas com pandas e envia relatório diário por e-mail para a
+                diretoria automaticamente.
+              </p>
+              <a
+                class="btn btn-small"
+                href="https://github.com/AnnaRisnia/automacao-python"
+                target="_blank"
+                rel="noopener"
+                >Ver projeto</a
+              >
+            </article>
+
+            <article class="project-card">
+              <div class="project-image">🛢</div>
+              <h3>Análise de Logs com SQL</h3>
+              <p>
+                Consultas SQL para identificar comportamentos suspeitos em logs
+                de acesso: força bruta, acessos noturnos e arquivos sensíveis
+                acessados.
+              </p>
+              <a
+                class="btn btn-small"
+                href="https://github.com/AnnaRisnia/analise-logs-sql"
+                target="_blank"
+                rel="noopener"
+                >Ver projeto</a
+              >
+            </article>
+
+            <article class="project-card">
+              <div class="project-image">✅</div>
+              <h3>Lista de Tarefas</h3>
+              <p>
+                Aplicação web com HTML, CSS e JavaScript puro. Adicione, conclua
+                e filtre tarefas com animações e design responsivo.
+              </p>
+              <a
+                class="btn btn-small"
+                href="https://github.com/AnnaRisnia/lista-de-tarefas"
+                target="_blank"
+                rel="noopener"
+                >Ver projeto</a
+              >
+            </article>
+
+            <article class="project-card">
+              <div class="project-image">💻</div>
+              <h3>Portfólio HTML/CSS/JS</h3>
+              <p>
+                Site pessoal desenvolvido do zero com HTML, CSS e JavaScript,
+                hospedado no GitHub Pages.
+              </p>
+              <a
+                class="btn btn-small"
+                href="https://github.com/AnnaRisnia/portfolio-anna-risnia"
+                target="_blank"
+                rel="noopener"
+                >Ver projeto</a
+              >
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contato" class="contact section-dark">
+        <div class="container contact-grid">
+          <div>
+            <span class="decor">🍂</span>
+            <h2>Vamos conversar?</h2>
+            <p>
+              Estou aberta a novas oportunidades, projetos e parcerias na área
+              de tecnologia e segurança cibernética.
+            </p>
+            <a class="btn btn-primary" href="mailto:ar.costta@outlook.com">
+              ✉ Entrar em Contato
+            </a>
+          </div>
+          <div class="contact-list">
+            <p>✉ ar.costta@outlook.com</p>
+            <p>
+              <a
+                href="https://www.linkedin.com/in/anna-risnia-pcd-5a4460169/"
+                target="_blank"
+                rel="noopener"
+              >
+                in linkedin.com/in/anna-risnia
+              </a>
+            </p>
+            <p>
+              <a
+                href="https://github.com/AnnaRisnia"
+                target="_blank"
+                rel="noopener"
+              >
+                GitHub github.com/AnnaRisnia
+              </a>
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2025 Anna Rísnia. Todos os direitos reservados.</p>
+      <span>🍂</span>
+    </footer>
+
+    <script>
+      var menu = document.getElementById("menu");
+      var hamburguer = document.getElementById("hamburguer");
+
+      function toggleMenu() {
+        menu.classList.toggle("menu-aberto");
+        hamburguer.classList.toggle("ativo");
+      }
+
+      function fecharMenu() {
+        menu.classList.remove("menu-aberto");
+        hamburguer.classList.remove("ativo");
+      }
+
+      document.addEventListener("click", function (evento) {
+        var clicouForaDoMenu = !menu.contains(evento.target);
+        var clicouForaDoHamburguer = !hamburguer.contains(evento.target);
+        if (clicouForaDoMenu && clicouForaDoHamburguer) {
+          fecharMenu();
+        }
+      });
+    </script>
+  </body>
+</html>
